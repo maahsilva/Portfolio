@@ -1,94 +1,42 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { Header } from './components/header/header'
+import "./styles/home.scss"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main className="container">
+      <Header/>
+      <div>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          Estudante de Engenharia de Software, formada em Técnico de Desenvolvimento de Sistemas. Com uma 
+          sólida base técnica e paixão por aprender e aplicar novas tecnologias, estou motivada a contribuir 
+          ativamente em projetos desafiadores, aplicando meus conhecimentos e me desenvolvendo cada vez mais.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <h3>Habilidades</h3>
+        <div className="skill level">
+
         </div>
-      </div>
+        <div className="infos">
+          <h3>Idiomas</h3>
+        </div>
+        <div className="languages-info"> 
+          <span> 🇧🇷 PT-BR - Nativo</span>
+        </div>
+        <h3>Educação</h3>
+        <div className="educational-info">
+          <span>🎓</span>
+          <span>
+            <ul>
+              <li>Engenharia de Software| 2023 - 2027 Universidade Uninter</li>
+              <li>Téc. Desenvolvimento de Sistemas | 2022 - 2023 ETEC de Taboão da Serra</li>
+            </ul>
+          </span>
+        </div>
+        <div className="buttons">
+          <div className="social">
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          </div>
+        </div>
+        <button>Entre em contato</button>
       </div>
     </main>
   )
